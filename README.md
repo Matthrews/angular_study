@@ -73,3 +73,9 @@ Q: How can we use components?
 
 ![image-20220424212100373](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424212100373.png)
 
+```bash
+ng g c use-list --inline-style
+ng g c cc-list --inline-template
+ng g c vv-list --inline-template --inline-style
+```
+
