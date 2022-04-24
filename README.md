@@ -79,3 +79,23 @@ ng g c cc-list --inline-template
 ng g c vv-list --inline-template --inline-style
 ```
 
+## Lesson 9: What is module?
+
+![image-20220424213932843](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424213932843.png)
+
+## Lesson 10: How to make and call function
+
+![image-20220424215231108](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424215231108.png)
+
+```html
+<button (click)="getName('cck')">Click me</button>
+```
+
+## Lesson 10: Important Events
+
+![image-20220424220051592](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424220051592.png)
+
+## Lesson 11: Get Input field Value
+
+![image-20220424221351921](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424221351921.png)
+

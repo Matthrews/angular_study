@@ -1,0 +1,26 @@
+<h1>Hello Angular {{title}}</h1>
+<app-login></app-login>
+
+<button (click)="getName('cck')">Click me</button>
+
+<br />
+<br />
+
+<input type="text" #box placeholder="keyup box" (keyup)="getKey(box.value)" />
+<br />
+<br />
+<input type="text" #box2 placeholder="keydown box" (keydown)="getKey(box2.value)" />
+<br />
+<br />
+<input type="text" #box3 placeholder="blur box" (blur)="getKey(box3.value)" />
+<br />
+<br />
+<input type="text" #box4 placeholder="input box" (input)="getKey(box4.value)" />
+
+<br />
+<br />
+<h1>{{subTitle}}</h1>
+<!-- <input type="text" #container placeholder="Enter your name..." name="name" (keyup)="getValue(container.value)" /> -->
+<input type="text" #container placeholder="Enter your name..." name="name" />
+<button (click)="getValue(container.value)">Click me</button>
+<p>Box value is {{displayName}}</p>
