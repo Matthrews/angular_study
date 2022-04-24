@@ -28,3 +28,48 @@ Angular12 Study
 Lesson 4: Hello World | Apply first change
 
 ![image-20220424203132755](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424203132755.png)****
+
+## Lesson 5: What is interpolation
+
+![image-20220424203729966](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424203729966.png)`xxx.component.ts`中定义的动态值可以在`xxx.component.html`中通过`{{}}`使用
+
+variable, function, typeof, num+1. OK
+
+new, ++   Error
+
+Q: How to make dynamic class?
+
+```html
+<h1 class="{{cls}}">Dynamic class</h1>
+<!-- OR -->
+<h1 class={{cls}}>Dynamic class</h1>
+```
+
+## Lesson 6: Angular CLI & Important commands
+
+![image-20220424205312371](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424205312371.png)
+
+```bash
+npm insstall -g @angular/cli@12.0.0
+ng generate component login
+# OR
+ng g c login
+ng generate module user
+ng generate class Person
+ng generate service api
+```
+
+## Lesson 7: Component
+
+![image-20220424210752317](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424210752317.png)
+
+Q: How can we use components?
+
+```html
+<app-login></app-login>
+```
+
+## Lesson 8: Component with Inline Style & Template
+
+![image-20220424212100373](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424212100373.png)
+
