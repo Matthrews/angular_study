@@ -99,3 +99,12 @@ ng g c vv-list --inline-template --inline-style
 
 ![image-20220424221351921](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424221351921.png)
 
+## Lesson 12: Make Counter
+
+![image-20220424222436171](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424222436171.png)
+
+## Lesson 13: Basic style
+
+![image-20220424223454094](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424223454094.png)
+
+优先级：Inline Style > Internal Style > Global Style > Component Style

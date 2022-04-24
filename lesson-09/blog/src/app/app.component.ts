@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '12.0.0';
-  subTitle = 'Get Input Field Value';
+  title2 = 'Get Input Field Value';
+  title3 = 'Make Counter';
   getName(name: string = 'Matthew') {
     alert(name);
   }
@@ -17,5 +18,15 @@ export class AppComponent {
   displayName: string = '';
   getValue(value: string) {
     this.displayName = value;
+  }
+  count: number = 0;
+  counter(type: string) {
+    if (type === 'add') {
+      this.count++;
+    } else if (type === 'minus') {
+      this.count--;
+    } else {
+      console.warn('Unknown type');
+    }
   }
 }

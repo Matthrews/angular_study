@@ -19,8 +19,25 @@
 
 <br />
 <br />
-<h1>{{subTitle}}</h1>
+<h1>{{title2}}</h1>
 <!-- <input type="text" #container placeholder="Enter your name..." name="name" (keyup)="getValue(container.value)" /> -->
 <input type="text" #container placeholder="Enter your name..." name="name" />
 <button (click)="getValue(container.value)">Click me</button>
 <p>Box value is {{displayName}}</p>
+
+<br />
+<br />
+<h1>{{title3}}</h1>
+<button (click)="counter('minus')">Minus</button>
+<p>Count is: {{count}}</p>
+<button (click)="counter('add')">Increment</button>
+
+
+<br />
+<br />
+<h1 class="cck" style="color: blue;">Internal style</h1>
+<style>
+  .cck {
+    color: aqua;
+  }
+</style>
