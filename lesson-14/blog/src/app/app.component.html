@@ -52,3 +52,13 @@
 <ul *ngFor="let user of users">
   <li>Name is {{user}}</li>
 </ul>
+
+<ul *ngFor="let listItem of list">
+  <li>Name is {{listItem.name}}</li>
+  <li>Phone is {{listItem.phone}}</li>
+  <li>Email is {{listItem.email}}</li>
+
+  <ul *ngFor="let account of listItem.accounts">
+    <li>Account is {{account}}</li>
+  </ul>
+</ul>

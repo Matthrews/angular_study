@@ -156,3 +156,15 @@ Conclusion: Property Binding is a better option s compreg to Interpolation
 ```
 
 ![image-20220425235119213](/Users/opsmind/Library/Application Support/typora-user-images/image-20220425235119213.png)
+
+```html
+<ul *ngFor="let listItem of list">
+  <li>Name is {{listItem.name}}</li>
+  <li>Phone is {{listItem.phone}}</li>
+  <li>Email is {{listItem.email}}</li>
+
+  <ul *ngFor="let account of listItem.accounts">
+    <li>Account is {{account}}</li>
+  </ul>
+</ul>
+```
