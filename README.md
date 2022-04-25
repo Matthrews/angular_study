@@ -168,3 +168,14 @@ Conclusion: Property Binding is a better option s compreg to Interpolation
   </ul>
 </ul>
 ```
+
+## Lesson 20: Style Binding
+
+![image-20220426000249378](/Users/opsmind/Library/Application Support/typora-user-images/image-20220426000249378.png)
+
+```html
+<!-- <h1 style="color: green;">{{ title }}</h1> -->
+<h1 [style.color]="'red'">{{ title }}</h1>
+<h1 [style.color]="color">{{ title }}</h1>
+<button (click)="updateColor()">Update Color</button>
+```
