@@ -1,0 +1,54 @@
+<h1>{{title}}</h1>
+
+<input type="text" value="{{name}}" disabled="{{disable}}">
+
+<br /><br />
+
+<input type="text" [value]=name [disabled]=disable>
+<br /><br />
+
+<h1>{{title2}}</h1>
+
+<!-- <p *ngIf="show else ccb">Matthew</p> -->
+<p *ngIf="show; then ccf else ccb">Matthew</p>
+<ng-template #ccf>
+  <p>Matthew</p>
+</ng-template>
+<ng-template #ccb>
+  <p>Jansen</p>
+</ng-template>
+
+<br /><br />
+
+<h1>multiple condition or elseif</h1>
+
+<ng-template [ngIf]="color === 'green'">
+  <p style="color: green;">Green Color</p>
+</ng-template>
+
+<ng-template [ngIf]="color === 'red'">
+  <p style="color: red;">Red Color</p>
+</ng-template>
+
+<ng-template [ngIf]="color === 'gray'">
+  <p style="color: gray;">Gray Color</p>
+</ng-template>
+
+
+<br /><br />
+
+<h1>use switch case</h1>
+<div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'red'" style="color: red;">Red Color</h1>
+  <h1 *ngSwitchCase="'green'" style="color: green;">Green Color</h1>
+  <h1 *ngSwitchCase="'gray'" style="color: gray;">Gray Color</h1>
+  <h1 *ngSwitchDefault>Unknown Color</h1>
+</div>
+
+<br /><br />
+<h1>Loop in Angular</h1>
+<p *ngFor="let user of users">Name is {{user}}</p>
+
+<ul *ngFor="let user of users">
+  <li>Name is {{user}}</li>
+</ul>

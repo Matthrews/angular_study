@@ -108,3 +108,51 @@ ng g c vv-list --inline-template --inline-style
 ![image-20220424223454094](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424223454094.png)
 
 优先级：Inline Style > Internal Style > Global Style > Component Style
+
+
+## Lesson 14: Property Binding
+
+![image-20220424224514726](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424224514726.png)
+
+Conclusion: Property Binding is a better option s compreg to Interpolation
+
+
+## Lesson 15: If/Else Condition
+
+![image-20220424230017201](/Users/opsmind/Library/Application Support/typora-user-images/image-20220424230017201.png)
+
+![image-20220425084622390](/Users/opsmind/Library/Application Support/typora-user-images/image-20220425084622390.png)
+
+```html
+<!-- <p *ngIf="show else ccb">Matthew</p> -->
+<p *ngIf="show; then ccf else ccb">Matthew</p>
+<ng-template #ccf>
+  <p>Matthew</p>
+</ng-template>
+<ng-template #ccb>
+  <p>Jansen</p>
+</ng-template>
+```
+
+## Lesson 17: Switch Case
+
+![image-20220425132044633](/Users/opsmind/Library/Application Support/typora-user-images/image-20220425132044633.png)
+
+```html
+<div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'red'" style="color: red;">Red Color</h1>
+  <h1 *ngSwitchCase="'green'" style="color: green;">Green Color</h1>
+  <h1 *ngSwitchCase="'gray'" style="color: gray;">Gray Color</h1>
+  <h1 *ngSwitchDefault>Unknown Color</h1>
+</div>
+```
+
+## Lesson 18: Loop in Angular
+
+![image-20220425234531887](/Users/opsmind/Library/Application Support/typora-user-images/image-20220425234531887.png)
+
+```html
+<p *ngFor="let user of users">Name is {{user}}</p>
+```
+
+![image-20220425235119213](/Users/opsmind/Library/Application Support/typora-user-images/image-20220425235119213.png)
