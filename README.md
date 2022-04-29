@@ -191,3 +191,10 @@ Conclusion: Property Binding is a better option s compreg to Interpolation
 ![image-20220428233611925](/Users/opsmind/Library/Application Support/typora-user-images/image-20220428233611925.png)
 
 ![image-20220429224112431](/Users/opsmind/Library/Application Support/typora-user-images/image-20220429224112431.png)
+
+
+## Lesson 23: Add Bootstrap
+
+![image-20220429225212208](/Users/opsmind/Library/Application Support/typora-user-images/image-20220429225212208.png)
+
+Hoe to add css: https://howtojs.io/how-to-add-bootstrap-css-to-an-angular-12-application-in-multiple-ways/git
