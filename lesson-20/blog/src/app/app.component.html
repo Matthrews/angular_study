@@ -1,4 +1,32 @@
+<app-header></app-header>
+<br />
+<br />
+
 <!-- <h1 style="color: green;">{{ title }}</h1> -->
 <h1 [style.color]="'red'">{{ title }}</h1>
 <h1 [style.color]="color">{{ title }}</h1>
 <button (click)="updateColor()">Update Color</button>
+
+<br />
+<br />
+
+<form #basicForm="ngForm" (submit)="getData(basicForm.value)">
+  <input type="text" ngModel name="name" placeholder="Enter user name">
+  <br />
+  <input type="email" ngModel name="email" placeholder="Enter user email">
+  <br />
+  <input type="password" ngModel name="password" placeholder="Enter user password">
+  <br />
+  <button>Register</button>
+</form>
+
+<ul *ngIf="userData.name || userData.email">
+  <li>{{userData.name}}</li>
+  <li>{{userData.email}}</li>
+</ul>
+
+<br />
+<br />
+
+<h1 *ngIf="display">Toggle Example</h1>
+<button (click)="toggle()">Toggle</button>

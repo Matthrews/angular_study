@@ -179,3 +179,15 @@ Conclusion: Property Binding is a better option s compreg to Interpolation
 <h1 [style.color]="color">{{ title }}</h1>
 <button (click)="updateColor()">Update Color</button>
 ```
+
+
+## Lesson 21: Header Component
+
+![image-20220428232246421](/Users/opsmind/Library/Application Support/typora-user-images/image-20220428232246421.png)
+
+
+## Lesson 22: Form Component
+
+![image-20220428233611925](/Users/opsmind/Library/Application Support/typora-user-images/image-20220428233611925.png)
+
+![image-20220429224112431](/Users/opsmind/Library/Application Support/typora-user-images/image-20220429224112431.png)
